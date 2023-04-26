@@ -163,7 +163,7 @@ function start() {
       // fadeOut current
       $('.stats-container').fadeOut(function() {
         // Update to new text and fadeIn
-          $('.stats-container').html('<span class="text">' + state.stats[stats_keys[stats_pos]].count + ' <i class="fas fa-' + state.stats[stats_keys[stats_pos]].icon + '"></i></span>')
+        $('.stats-container').html('<span class="text">' + '<i class="fas fa-' + state.stats[stats_keys[stats_pos]].icon + '"></i> ' + state.stats[stats_keys[stats_pos]].count + '</span>')
         $('.stats-container').width('initial');
           // Calculate width
           if (stats_width < $('.stats-container').width()) {
