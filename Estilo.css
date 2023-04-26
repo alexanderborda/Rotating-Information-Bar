@@ -12,13 +12,9 @@
   	--font-size: {{font_size}}px;
     --train-color: {{train_color}};
   	--train-height: {{train_height}}px;
-	--border-width: {{borderWidth}};
-	--border-radius: {{borderRadius}};
-	--border-style: {{borderStyle}};
-	--boxShadow-color: {{boxShadowColor}};
-	--boxShadow-horizontal: {{boxShadowHorizontal}};
-	--boxShadow-vertical: {{boxShadowVertical}};
-	--boxShadow-blur: {{boxShadowBlur}};
+	--border: {{borderWidth}}px {{borderStyle}} {{borderColor}};
+  	--border-radius: {{borderRadius}}px;
+  	--box-shadow: drop-shadow({{boxShadowHorizontal}}px {{boxShadowVertical}}px {{boxShadowBlur}}px {{boxShadowColor}});
 }
 
 /* Layout */
