@@ -192,7 +192,7 @@ function start() {
           
           // Check if empty
           if (latestObject.name == "") {
-            text += "<i class='fa-brands fa-" + latestObject.icon + "'></i>" + latestObject.empty;
+            text += "<i class='fa-brands fa-" + latestObject.icon + "'></i> " + latestObject.empty;
           } else {
               // Check type
               switch (latestType) {

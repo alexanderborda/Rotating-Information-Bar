@@ -67,3 +67,7 @@ body {
 .fas {
 	color: var(--icon-color) !important;
 }
+
+.fa-brands {
+	color: var(--icon-color) !important;
+}
