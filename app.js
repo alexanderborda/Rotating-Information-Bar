@@ -197,16 +197,16 @@ function start() {
               // Check type
               switch (latestType) {
                   case 'follower':
-                      text += latestObject.name + " <i class='fas fa-" + latestObject.icon + "'></i>";
+                      text += "<i class='fas fa-" + latestObject.icon + "'></i> " + latestObject.name;
                   break;
                   case 'subscriber':
-                      text += latestObject.name + " <span class='accent'>" + latestObject.amount + " " + ((latestObject.amount > 1) ? "Months" : "Month") + "</span> <i class='fas fa-" + latestObject.icon + "'></i>";
+                      text += "<i class='fas fa-" + latestObject.icon + "'></i> " + latestObject.name + " <span class='accent'>" + latestObject.amount + " " + ((latestObject.amount > 1) ? "Months" : "Month");
                   break;
                   case 'donation':
-                      text += latestObject.name + " <span class='accent'>" + currency + latestObject.amount.toFixed(2) + "</span> <i class='fas fa-" + latestObject.icon + "'></i>";
+                      text += "<i class='fas fa-" + latestObject.icon + "'></i> " + latestObject.name + " <span class='accent'>" + currency + latestObject.amount.toFixed(2);
                   break;
                   case 'cheer':
-                      text += latestObject.name + " <span class='accent'>" + latestObject.amount + " " + ((latestObject.amount > 1) ? "Bits" : "Bit") + "</span> <i class='fas fa-" + latestObject.icon + "'></i>";
+                      text += "<i class='fas fa-" + latestObject.icon + "'></i> " + latestObject.name + " <span class='accent'>" + latestObject.amount + " " + ((latestObject.amount > 1) ? "Bits" : "Bit");
                   break;
                   // Socials 'twitch', 'youtube', 'tiktok', 'instagram', 'twitter', 'facebook', 'discord'
                   case 'twitch':
