@@ -5,6 +5,69 @@
     "value": "rgba(1, 22, 39, 0.5)",
     "group": "Global settings"
   },
+  "borderWidth":{
+    "type":"slider",
+    "label":"Border Thickness",
+    "value":8,
+    "min":0,
+    "max":20,
+    "step":1,
+    "group":"Global settings"
+  },
+  "borderRadius":{
+    "type":"slider",
+    "label":"Border Rounding",
+    "value":40,
+    "min":0,
+    "max":90,
+    "step":1,
+    "group":"Global settings"
+  },
+  "borderStyle":{
+    "type":"dropdown",
+    "label":"Border Style",
+    "options":{
+      "none":"None",
+      "solid":"Solid",
+      "dotted":"Dotted",
+      "dashed":"Dashed"
+    },
+    "value":"none",
+    "group":"Global settings"
+  },
+  "boxShadowColor":{
+    "type":"colorpicker",
+    "label":"Shadow Color",
+    "value":"rgba(0,0,0,0.4)",
+    "group":"Widget Styles"
+  },
+  "boxShadowHorizontal":{
+    "type":"slider",
+    "label":"Shadow Horizontal Length",
+    "value":0,
+    "min":-10,
+    "max":10,
+    "step":1,
+    "group":"Global settings"
+  },
+  "boxShadowVertical":{
+    "type":"slider",
+    "label":"Shadow Vertical Length",
+    "value":3,
+    "min":-10,
+    "max":10,
+    "step":1,
+    "group":"Global settings"
+  },
+  "boxShadowBlur":{
+    "type":"slider",
+    "label":"Shadow Blur Radius",
+    "value":2,
+    "min":0,
+    "max":10,
+    "step":1,
+    "group":"Global settings"
+  },
   "accent_color": {
     "type": "colorpicker",
     "label": "Accent Color",
