@@ -12,6 +12,13 @@
   	--font-size: {{font_size}}px;
     --train-color: {{train_color}};
   	--train-height: {{train_height}}px;
+	--border-width: {{borderWidth}};
+	--border-radius: {{borderRadius}};
+	--border-style: {{borderStyle}};
+	--boxShadow-color: {{boxShadowColor}};
+	--boxShadow-horizontal: {{boxShadowHorizontal}};
+	--boxShadow-vertical: {{boxShadowVertical}};
+	--boxShadow-blur: {{boxShadowBlur}};
 }
 
 /* Layout */
