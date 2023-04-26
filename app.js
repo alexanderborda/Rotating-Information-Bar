@@ -54,6 +54,14 @@ let state = {
           "icon": "person",
           "empty": ""
       },
+       // Socials 'twitch', 'youtube', 'tiktok', 'instagram', 'twitter', 'facebook', 'discord'
+      "twitch": {
+        "enabled": false,
+          "name": "",
+          "amount": 0,
+          "icon": "person",
+          "empty": ""
+      },
       "youtube": {
         "enabled": false,
           "name": "",
@@ -68,14 +76,28 @@ let state = {
           "icon": "person",
           "empty": ""
       },
-      "discord": {
+      "instagram": {
         "enabled": false,
           "name": "",
           "amount": 0,
           "icon": "person",
           "empty": ""
       },
-      "instagram": {
+      "twitter": {
+        "enabled": false,
+          "name": "",
+          "amount": 0,
+          "icon": "person",
+          "empty": ""
+      },
+      "facebook": {
+        "enabled": false,
+          "name": "",
+          "amount": 0,
+          "icon": "person",
+          "empty": ""
+      },
+      "discord": {
         "enabled": false,
           "name": "",
           "amount": 0,
@@ -186,27 +208,27 @@ function start() {
                   case 'cheer':
                       text += latestObject.name + " <span class='accent'>" + latestObject.amount + " " + ((latestObject.amount > 1) ? "Bits" : "Bit") + "</span> <i class='fas fa-" + latestObject.icon + "'></i>";
                   break;
-                  // Socials
-                  case 'tiktok':
-                      text += latestObject.name + " <i class='fas fa-" + latestObject.icon + "'></i>";
+                  // Socials 'twitch', 'youtube', 'tiktok', 'instagram', 'twitter', 'facebook', 'discord'
+                  case 'twitch':
+                      text += "<i class='fa-brands fa-" + latestObject.icon + "'></i>" + latestObject.name;
                   break;
                   case 'youtube':
-                      text += latestObject.name + " <i class='fas fa-" + latestObject.icon + "'></i>";
+                      text += "<i class='fa-brands fa-" + latestObject.icon + "'></i>" + latestObject.name;
                   break;
                   case 'tiktok':
-                      text += latestObject.name + " <i class='fas fa-" + latestObject.icon + "'></i>";
+                      text += "<i class='fa-brands fa-" + latestObject.icon + "'></i>" + latestObject.name;
                   break;
                   case 'instagram':
-                      text += latestObject.name + " <i class='fas fa-" + latestObject.icon + "'></i>";
+                      text += "<i class='fa-brands fa-" + latestObject.icon + "'></i>" + latestObject.name;
                   break;
                   case 'twitter':
-                      text += latestObject.name + " <i class='fas fa-" + latestObject.icon + "'></i>";
+                      text += "<i class='fa-brands fa-" + latestObject.icon + "'></i>" + latestObject.name;
                   break;
                   case 'facebook':
-                      text += latestObject.name + " <i class='fas fa-" + latestObject.icon + "'></i>";
+                      text += "<i class='fa-brands fa-" + latestObject.icon + "'></i>" + latestObject.name;
                   break;
                   case 'discord':
-                      text += latestObject.name + " <i class='fas fa-" + latestObject.icon + "'></i>";
+                      text += "<i class='fa-brands fa-" + latestObject.icon + "'></i>" + latestObject.name;
                   break;
               }
           }
@@ -322,55 +344,55 @@ window.addEventListener('onWidgetLoad', function(obj) {
   } else {
     delete state.latest.subscriber;
   }
-  // Socials
-  if (fieldData.latest_toggle_tiktok == "true") {
-    state.latest.tiktok.empty = fieldData.latest_tiktok_empty;
-      state.latest.tiktok.enabled = true;
-      state.latest.tiktok.icon = fieldData.tiktoks_icon;
+  // Socials 'twitch', 'youtube', 'tiktok', 'instagram', 'twitter', 'facebook', 'discord'
+    if (fieldData.latest_toggle_twitch == "true") {
+    state.latest.twitch.empty = fieldData.latest_twitch_empty;
+      state.latest.twitch.enabled = true;
+      state.latest.twitch.icon = fieldData.twitch_icon;
   } else {
-    delete state.latest.tiktok;
-  }
-  if (fieldData.latest_toggle_discord == "true") {
-    state.latest.discord.empty = fieldData.latest_discord_empty;
-      state.latest.discord.enabled = true;
-      state.latest.discord.icon = fieldData.discords_icon;
-  } else {
-    delete state.latest.discord;
-  }
-  if (fieldData.latest_toggle_instagram == "true") {
-    state.latest.instagram.empty = fieldData.latest_instagram_empty;
-      state.latest.instagram.enabled = true;
-      state.latest.instagram.icon = fieldData.instagrams_icon;
-  } else {
-    delete state.latest.instagram;
+    delete state.latest.twitch;
   }
   if (fieldData.latest_toggle_youtube == "true") {
     state.latest.youtube.empty = fieldData.latest_youtube_empty;
       state.latest.youtube.enabled = true;
-      state.latest.youtube.icon = fieldData.youtubes_icon;
+      state.latest.youtube.icon = fieldData.youtube_icon;
   } else {
     delete state.latest.youtube;
   }
-  if (fieldData.latest_toggle_twitch == "true") {
-    state.latest.twitch.empty = fieldData.latest_twitch_empty;
-      state.latest.twitch.enabled = true;
-      state.latest.twitch.icon = fieldData.twitchs_icon;
+  if (fieldData.latest_toggle_tiktok == "true") {
+    state.latest.tiktok.empty = fieldData.latest_tiktok_empty;
+      state.latest.tiktok.enabled = true;
+      state.latest.tiktok.icon = fieldData.tiktok_icon;
   } else {
-    delete state.latest.twitch;
+    delete state.latest.tiktok;
+  }
+  if (fieldData.latest_toggle_instagram == "true") {
+    state.latest.instagram.empty = fieldData.latest_instagram_empty;
+      state.latest.instagram.enabled = true;
+      state.latest.instagram.icon = fieldData.instagram_icon;
+  } else {
+    delete state.latest.instagram;
   }
   if (fieldData.latest_toggle_twitter == "true") {
     state.latest.twitter.empty = fieldData.latest_twitter_empty;
       state.latest.twitter.enabled = true;
-      state.latest.twitter.icon = fieldData.twitters_icon;
+      state.latest.twitter.icon = fieldData.twitter_icon;
   } else {
     delete state.latest.twitter;
   }
   if (fieldData.latest_toggle_facebook == "true") {
     state.latest.facebook.empty = fieldData.latest_facebook_empty;
       state.latest.facebook.enabled = true;
-      state.latest.facebook.icon = fieldData.facebooks_icon;
+      state.latest.facebook.icon = fieldData.facebook_icon;
   } else {
     delete state.latest.facebook;
+  }
+  if (fieldData.latest_toggle_discord == "true") {
+    state.latest.discord.empty = fieldData.latest_discord_empty;
+      state.latest.discord.enabled = true;
+      state.latest.discord.icon = fieldData.discord_icon;
+  } else {
+    delete state.latest.discord;
   }
   // Start Everything!
   start();
@@ -414,12 +436,12 @@ window.addEventListener('onSessionUpdate', function(obj) {
       state.stats.followers.count=obj.detail.session["follower-total"].count;
   }
    // Socials - Tiktok
-  if (state.socials.tiktok) {
-    state.socials.tiktok.name = obj.detail.session["tiktok-socials"].name;
-  }
-  if (state.socials.discord) {
-    state.socials.discord.name = obj.detail.session["discord-socials"].name;
-  }
+  //if (state.latest.tiktok) {
+   // state.latest.tiktok.name = obj.detail.session["tiktok-socials"].name;
+  //}
+  //if (state.latest.discord) {
+  //  state.latest.discord.name = obj.detail.session["discord-socials"].name;
+ // }
 });
 
 // On new event received

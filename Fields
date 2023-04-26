@@ -210,105 +210,165 @@
     "value": "No Donations",
     "group": "Tips"
   },
-  "latest_toggle_socials": {
+  "donation_icon": {
+      "type": "text",
+    "label": "Donation Icon",
+       "value": "money-bill-wave",
+    "group": "Tips"
+  },
+  "latest_toggle_twitch": {
     "type": "dropdown",
-    "label": "Enable Socials Networks?",
+    "label": "Enable twitch?",
     "value": "true",
     "options": {
       "true": "Enable",
       "false": "Disable"
     },
-    "group": "Socials"
+    "group": "Twitch"
   },
   "latest_twitch_empty": {
     "type": "text",
     "label": "Twitch",
     "value": "No twitch",
-    "group": "Socials"
+    "group": "Twitch"
   },
   "twitch_icon":{
     "type":"text",
     "label":"Twitch Icon",
     "value":"twitch",
-    "group":"Socials"
+    "group":"Twitch"
+  },
+  "latest_toggle_youtube": {
+      "type": "dropdown",
+      "label": "Enable youtube?",
+      "value": "true",
+      "options": {
+        "true": "Enable",
+        "false": "Disable"
+      },
+      "group": "Youtube"
   },
   "latest_youtube_empty": {
     "type": "text",
     "label": "Youtube",
     "value": "No youtube",
-    "group": "Socials"
+    "group": "Youtube"
   },
   "youtube_icon":{
     "type":"text",
     "label":"YouTube Icon",
     "value":"youtube",
-    "group":"Socials"
+    "group":"Youtube"
+  },
+  "latest_toggle_tiktok": {
+      "type": "dropdown",
+      "label": "Enable tiktok?",
+      "value": "true",
+      "options": {
+        "true": "Enable",
+        "false": "Disable"
+      },
+      "group": "Tiktok"
   },
   "latest_tiktok_empty": {
     "type": "text",
     "label": "Tiktok",
     "value": "No tiktok",
-    "group": "Socials"
+    "group": "Tiktok"
   },
   "tiktok_icon":{
     "type":"text",
     "label":"TikTok Icon",
     "value":"tiktok",
-    "group":"Socials"
+    "group":"Tiktok"
+  },
+  "latest_toggle_instagram": {
+      "type": "dropdown",
+      "label": "Enable instagram?",
+      "value": "true",
+      "options": {
+        "true": "Enable",
+        "false": "Disable"
+      },
+      "group": "Instagram"
   },
   "latest_instagram_empty": {
     "type": "text",
     "label": "Instagram",
     "value": "No instagram",
-    "group": "Socials"
+    "group": "Instagram"
   },
   "instagram_icon":{
     "type":"text",
     "label":"Instagram Icon",
     "value":"instagram",
-    "group":"Socials"
+    "group":"Instagram"
+  },
+  "latest_toggle_twitter": {
+      "type": "dropdown",
+      "label": "Enable twitter?",
+      "value": "true",
+      "options": {
+        "true": "Enable",
+        "false": "Disable"
+      },
+      "group": "Twitter"
   },
   "latest_twitter_empty": {
     "type": "text",
     "label": "Twitter",
     "value": "No twitter",
-    "group": "Socials"
+    "group": "Twitter"
   },
   "twitter_icon":{
     "type":"text",
     "label":"Twitter Icon",
     "value":"",
-    "group":"Socials"
+    "group":"Twitter"
+  },
+  "latest_toggle_facebook": {
+      "type": "dropdown",
+      "label": "Enable Facebook?",
+      "value": "true",
+      "options": {
+        "true": "Enable",
+        "false": "Disable"
+      },
+      "group": "Facebook"
   },
   "latest_facebook_empty": {
     "type": "text",
     "label": "Facebook",
     "value": "No facebook",
-    "group": "Socials"
+    "group": "Facebook"
   },
   "facebook_icon":{
     "type":"text",
     "label":"Facebook Icon",
     "value":"",
-    "group":"Socials"
+    "group":"Facebook"
+  },
+  "latest_toggle_discord": {
+      "type": "dropdown",
+      "label": "Enable discord?",
+      "value": "true",
+      "options": {
+        "true": "Enable",
+        "false": "Disable"
+      },
+      "group": "Discord"
   },
   "latest_discord_empty": {
     "type": "text",
     "label": "Discord",
     "value": "No discord",
-    "group": "Socials"
+    "group": "Discord"
   },
   "discord_icon":{
     "type":"text",
     "label":"Discord Icon",
     "value":"discord",
-    "group":"Socials"
-  },
-  "donation_icon": {
-  	"type": "text",
-    "label": "Donation Icon",
-   	"value": "money-bill-wave",
-    "group": "Tips"
+    "group":"Discord"
   },
   "widgetName":{
    "type":"hidden",
