@@ -6,6 +6,7 @@
     --text-color: {{text_color}};
     --text-accent-color: {{text_accent_color}};
     --icon-color: {{icon_color}};
+	--icon-size: {{icon_size}}px;
   	--spacer-width: {{spacer_width}}px;
   	--spacer-margin: {{spacer_margin}}px;
   	--widget-padding: {{widget_padding}}px;
@@ -25,9 +26,14 @@ body {
 .main-container {
   	font-family: '{font_name}', cursive !important;
   	background-color: var(--background-color);
+	border: var(--border);
+	border-radius: var(--border-radius);
+	filter: var(--box-shadow);
+    -webkit-filter: var(--box-shadow);
+    -moz-filter: var(--box-shadow);
   	padding: var(--widget-padding);
   	height: calc(100% - var(--train-height));
-  	font-size: var(--font-size) !important;
+  	
   	display: flex;
   	align-items: center;
   	justify-content: space-between;
@@ -65,12 +71,15 @@ body {
 
 .text {
 	color: var(--text-color);
+  	font-size: var(--font-size) !important;
 }
 
 .fas {
 	color: var(--icon-color) !important;
+	font-size: var(--icon-size) !important;
 }
 
 .fa-brands {
 	color: var(--icon-color) !important;
+	font-size:: var(--icon-size) !important;
 }

@@ -103,6 +103,12 @@
     "value": "#ff143f",
     "group": "Global settings"
   },
+  "icon_size": {
+    "type": "number",
+    "label": "Icon Size",
+    "value": 18,
+    "group": "Global settings"
+   },
   "train_type": {
     "type": "dropdown",
     "label": "Train Type",
