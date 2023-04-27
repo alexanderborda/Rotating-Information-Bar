@@ -33,7 +33,6 @@ body {
     -moz-filter: var(--box-shadow);
   	padding: var(--widget-padding);
   	height: calc(100% - var(--train-height));
-  	
   	display: flex;
   	align-items: center;
   	justify-content: space-between;
@@ -81,5 +80,5 @@ body {
 
 .fa-brands {
 	color: var(--icon-color) !important;
-	font-size:: var(--icon-size) !important;
+	font-size: var(--icon-size) !important;
 }
